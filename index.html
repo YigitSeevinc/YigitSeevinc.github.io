@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b16">
+  <meta name="description" content="Yiğit Sevinç — Software Developer & Computer Technician. Edirne MTAL Bilişim Teknolojileri okul birincisi; Trakya Üniversitesi Yazılım Geliştirme lisans öğrencisi.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yiğit Sevinç — Software Developer & Computer Technician">
+  <meta property="og:description" content="Edirne MTAL Bilişim Teknolojileri okul birincisi ve Trakya Üniversitesi Yazılım Geliştirme lisans öğrencisi Yiğit Sevinç’in kişisel portfolyosu.">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://yigitsevinc.com/">
+  <link rel="canonical" href="https://yigitsevinc.com/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <title>Yiğit Sevinç — Software Developer & Computer Technician</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <canvas id="ambient" aria-hidden="true"></canvas>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 3h10v6a5 5 0 0 1-10 0V3Zm0 2H3v3a4 4 0 0 0 4 4m10-7h4v3a4 4 0 0 1-4 4m-5 2v6m-4 1h8"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-location" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.4 3.4 0 0 0-1-2.7c3.3-.4 6.8-1.6 6.8-7.3a5.7 5.7 0 0 0-1.5-4 5.3 5.3 0 0 0-.1-4S17.9-.4 15 1.5a14 14 0 0 0-6 0C6.1-.4 4.8 0 4.8 0a5.3 5.3 0 0 0-.1 4 5.7 5.7 0 0 0-1.5 4c0 5.7 3.5 6.9 6.8 7.3A3.4 3.4 0 0 0 9 18v4" transform="translate(1 2) scale(.9)"/></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Yiğit Sevinç ana sayfa"><img class="brand-mark" src="./favicon.svg" width="37" height="37" alt=""><span>Yiğit Sevinç<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç veya kapat"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <a href="#hakkimda">Hakkımda</a><a href="#basarilar">Başarılar</a><a href="#galeri">Galeri</a>
+        <a class="nav-contact" href="#iletisim">İletişim <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> MERAK ET. GELİŞTİR. HAYATA GEÇİR.</p>
+        <h1 id="hero-title">Yiğit <span class="gradient-text">Sevinç.</span></h1>
+        <p class="hero-roles"><span>Software Developer</span><span class="role-divider" aria-hidden="true"></span><span>Computer Technician</span></p>
+        <p class="hero-statement">Fikirleri koda,<br>kodu hayata dönüştürüyorum.</p>
+        <p class="hero-description">Web, mobil ve masaüstü yazılımları geliştiriyor; bilgisayar ve ağ sistemlerinde teknik çözümler üretiyorum.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#hakkimda">Beni tanı <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a><a class="button button-secondary" href="https://github.com/YigitSeevinc" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"/></svg> GitHub</a></div>
+        <div class="hero-meta"><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-location"/></svg>Edirne, Türkiye</span><span class="meta-divider"></span><span>SVC Soft kurucusu</span></div>
+      </div>
+
+      <div class="code-stage">
+        <div class="code-aura" aria-hidden="true"></div>
+        <section class="code-card" data-tilt aria-label="Etkileşimli profil kodu">
+          <div class="editor-chrome"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>yigit / workspace</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg></div>
+          <div class="editor-tabs"><div role="tablist" aria-label="Kod dosyaları"><button type="button" role="tab" id="tab-profile" aria-controls="code-profile" aria-selected="true" data-code-tab><span class="file-icon ts">TS</span> profile.ts</button><button type="button" role="tab" id="tab-systems" aria-controls="code-systems" aria-selected="false" tabindex="-1" data-code-tab><span class="file-icon py">PY</span> systems.py</button></div><button type="button" class="copy-code" data-copy-code aria-label="Görünen kodu kopyala" title="Kodu kopyala"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg></button></div>
+          <div class="code-panel" role="tabpanel" id="code-profile" aria-labelledby="tab-profile" tabindex="0">
+            <pre><code><span class="code-line"><span class="token-comment">// Merak, bir başlangıç noktası.</span></span><span class="code-line"><span class="token-keyword">const</span> <span class="token-variable">developer</span> = {</span><span class="code-line">  name: <span class="token-string">"Yiğit Sevinç"</span>,</span><span class="code-line">  roles: [</span><span class="code-line">    <span class="token-string">"Software Developer"</span>,</span><span class="code-line">    <span class="token-string">"Computer Technician"</span></span><span class="code-line">  ],</span><span class="code-line">  focus: [<span class="token-string">"Web"</span>, <span class="token-string">"Mobile"</span>, <span class="token-string">"Desktop"</span>],</span><span class="code-line">  beyondCode: [<span class="token-string">"Hardware"</span>, <span class="token-string">"Networks"</span>],</span><span class="code-line">  building: <span class="token-string">"SVC Soft"</span></span><span class="code-line">};</span><span class="code-line"> </span><span class="code-line"><span class="token-comment">// Her fikir, bir sonraki adım.</span></span><span class="code-line"><span class="token-function">console</span>.<span class="token-function">log</span>(<span class="token-string">"Let's build something."</span>);<span class="code-caret" aria-hidden="true"></span></span></code></pre>
+          </div>
+          <div class="code-panel" role="tabpanel" id="code-systems" aria-labelledby="tab-systems" tabindex="0" hidden>
+            <pre><code><span class="code-line"><span class="token-comment"># Kodun ötesinde, sahada da.</span></span><span class="code-line"><span class="token-variable">workspace</span> = {</span><span class="code-line">    <span class="token-string">"software"</span>: [<span class="token-string">"Python"</span>, <span class="token-string">"C/C++"</span>, <span class="token-string">"C#"</span>],</span><span class="code-line">    <span class="token-string">"systems"</span>: [<span class="token-string">"PC"</span>, <span class="token-string">"Networks"</span>],</span><span class="code-line">    <span class="token-string">"support"</span>: [<span class="token-string">"Setup"</span>, <span class="token-string">"Diagnostics"</span>],</span><span class="code-line">}</span><span class="code-line"> </span><span class="code-line"><span class="token-variable">process</span> = [</span><span class="code-line">    <span class="token-string">"Explore"</span>, <span class="token-string">"Build"</span>, <span class="token-string">"Test"</span>, <span class="token-string">"Improve"</span></span><span class="code-line">]</span><span class="code-line"> </span><span class="code-line"><span class="token-keyword">for</span> step <span class="token-keyword">in</span> process:</span><span class="code-line">    <span class="token-function">print</span>(step)</span><span class="code-line"><span class="token-comment"># Öğren. Üret. Tekrar dene.</span><span class="code-caret" aria-hidden="true"></span></span></code></pre>
+          </div>
+          <div class="editor-status"><span><i></i> ALWAYS LEARNING</span><span>UTF-8 <span aria-hidden="true">·</span> YS</span></div>
+          <span class="copy-feedback" data-copy-status role="status" aria-live="polite"></span>
+        </section>
+        <div class="code-caption"><span class="caption-line"></span><span>Biraz yazılım. Biraz donanım. Bolca merak.</span></div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="hakkimda" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-layout">
+          <div class="section-heading reveal"><p class="eyebrow section-eyebrow">01 / KİMİM</p><h2 id="about-title">Hakkımda<span class="gradient-text">.</span></h2></div>
+          <div class="about-story reveal">
+            <p class="large-copy">Ben Yiğit Sevinç; yazılım geliştiricisi ve bilgisayar teknisyeniyim.</p>
+            <p>Edirne Mesleki ve Teknik Anadolu Lisesi’nin Bilişim Teknolojileri alanından okul birincisi olarak mezun oldum. Şu anda Trakya Üniversitesi Yazılım Geliştirme bölümünde lisans eğitimime devam ediyorum.</p>
+            <p>Web, mobil ve masaüstü uygulamaları geliştiriyorum. 2023’ten bu yana SD Bilişim’de bilgisayar, ağ sistemleri ve teknik destek alanlarında saha deneyimi kazanıyorum. Geçmişte robotik yarışmalarına katıldım ve TEKNOFEST için projeler geliştirdim. Ürünlerimi SVC Soft çatısı altında bir araya getiriyorum.</p>
+            <a class="inline-link" href="https://svcsoft022.web.app/" target="_blank" rel="noopener noreferrer">SVC Soft’u ziyaret et <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements-section" id="basarilar" aria-labelledby="achievements-title">
+      <div class="container">
+        <div class="section-heading heading-row reveal"><div><p class="eyebrow section-eyebrow">02 / BAŞARILAR</p><h2 id="achievements-title">Ürettim. Yarıştım.<br><span class="gradient-text">Deneyim kazandım.</span></h2></div><p>Atölyedeki emeğin yarışma sahasına taşındığı anlardan bazıları.</p></div>
+        <div class="achievements-grid">
+          <article class="achievement-card gold reveal"><div class="achievement-top"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg><span>ROBOTTRAK ’26</span></div><p class="achievement-result">1<span>.</span></p><h3>Türkiye birinciliği</h3><p>İleri Seviye Çizgi İzleyen</p><span class="achievement-year">2026</span></article>
+          <article class="achievement-card silver reveal"><div class="achievement-top"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg><span>ROBOTTRAK ’26</span></div><p class="achievement-result">2<span>.</span></p><h3>Türkiye ikinciliği</h3><p>Mini Sumo Robot</p><span class="achievement-year">2026</span></article>
+          <article class="achievement-card violet reveal"><div class="achievement-top"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-globe"/></svg><span>ROBOCHALLENGE</span></div><p class="achievement-result result-text">Çeyrek<br>final</p><h3>Uluslararası deneyim</h3><p>Romanya · Robot yarışması</p><span class="achievement-year">2025</span></article>
+          <article class="achievement-card electric reveal"><div class="achievement-top"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg><span>17. MEB ROBOT YARIŞMASI</span></div><p class="achievement-result">18<span>.</span></p><h3>Türkiye 18.’liği</h3><p>Labirent kategorisi</p><span class="achievement-year">2025</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeri" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading gallery-heading reveal"><div><p class="eyebrow section-eyebrow">03 / GALERİ</p><h2 id="gallery-title">Karelere sığan<br><span class="gradient-text">birkaç an.</span></h2></div><p>Yarışma sahasından ve birlikte ürettiğimiz anlardan küçük bir seçki.</p></div>
+        <div class="gallery-grid reveal" aria-label="Fotoğraf galerisi">
+          <a class="gallery-card" href="./robofest-ekip.jpeg" data-gallery-item aria-label="RoboFest ekip fotoğrafını büyüt"><img src="./robofest-ekip.jpeg" width="3840" height="5120" alt="RoboFest etkinliğinde ekip arkadaşlarımla çalışma masasında" loading="lazy" decoding="async"><span class="gallery-caption"><small>01 / ROMANYA</small><strong>Ekip ruhu</strong></span><span class="gallery-expand" aria-hidden="true">↗</span></a>
+          <a class="gallery-card" href="./robotik-yarisma.jpeg" data-gallery-item aria-label="Robotik yarışması fotoğrafını büyüt"><img src="./robotik-yarisma.jpeg" width="1080" height="1080" alt="Robotik yarışmasında mini sumo robotuyla pistin başında" loading="lazy" decoding="async"><span class="gallery-caption"><small>02 / ROBOTİK</small><strong>Yarışma anı</strong></span><span class="gallery-expand" aria-hidden="true">↗</span></a>
+          <a class="gallery-card" href="./pist-hazirligi.jpeg" data-gallery-item aria-label="Pist hazırlığı fotoğrafını büyüt"><img src="./pist-hazirligi.jpeg" width="1200" height="1600" alt="Robot yarışması pistinde robotları hazırlarken" loading="lazy" decoding="async"><span class="gallery-caption"><small>03 / HAZIRLIK</small><strong>İşin başında</strong></span><span class="gallery-expand" aria-hidden="true">↗</span></a>
+          <a class="gallery-card" href="./genctek-zirvesi.jpeg" data-gallery-item aria-label="GençTek Zirvesi fotoğrafını büyüt"><img src="./genctek-zirvesi.jpeg" width="1536" height="2048" alt="Ankara GençTek Zirvesi sahnesinde temsilcilerle birlikte" loading="lazy" decoding="async"><span class="gallery-caption"><small>04 / ANKARA</small><strong>GençTek Zirvesi</strong></span><span class="gallery-expand" aria-hidden="true">↗</span></a>
+        </div>
+        <p class="gallery-swipe-hint">Diğer fotoğraflar için yana kaydır <span aria-hidden="true">→</span></p>
+      </div>
+    </section>
+
+    <dialog class="gallery-dialog" data-gallery-dialog aria-label="Fotoğraf görüntüleyici">
+      <button class="gallery-close" type="button" data-gallery-close aria-label="Fotoğrafı kapat">×</button>
+      <img data-gallery-image alt="">
+      <div class="gallery-dialog-footer"><div><span data-gallery-count></span><strong data-gallery-title></strong></div><div class="gallery-dialog-controls"><button type="button" data-gallery-prev aria-label="Önceki fotoğraf">←</button><button type="button" data-gallery-next aria-label="Sonraki fotoğraf">→</button></div></div>
+    </dialog>
+
+    <section class="contact-section container reveal" id="iletisim" aria-labelledby="contact-title">
+      <div class="contact-copy"><p class="eyebrow section-eyebrow">İLETİŞİM</p><h2 id="contact-title">İletişime <span class="gradient-text">geçelim.</span></h2><p>Proje, iş birliği veya bir soru için doğrudan yazabilirsin.</p></div>
+      <div class="contact-actions">
+        <a class="contact-method" href="mailto:yigitsevinc000@gmail.com"><span>KİŞİSEL E-POSTA</span><strong>yigitsevinc000@gmail.com</strong><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+        <a class="contact-method" href="mailto:yigitsevinc@trakya.edu.tr"><span>ÜNİVERSİTE E-POSTASI</span><strong>yigitsevinc@trakya.edu.tr</strong><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+        <a class="inline-link" href="https://github.com/YigitSeevinc" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"/></svg> GitHub profilim <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"/></svg></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer container"><a class="brand" href="#top"><span>Yiğit Sevinç<span class="brand-dot">.</span></span></a><span>Merakla, kodla ve biraz da inatla.</span><span>© <span data-year>2026</span> Yiğit Sevinç</span></footer>
+</body>
+</html>
+
+
+
